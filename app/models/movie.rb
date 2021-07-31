@@ -4,5 +4,9 @@ class Movie < ActiveRecord::Base
         Movie.create(title: title)
     end
 
+    def self.first_movie
+        Movie.first
+    end
+
 
 end
